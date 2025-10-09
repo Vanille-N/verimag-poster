@@ -10,6 +10,14 @@ To compile the poster run the following commands:
 $ typst watch --font-path=fonts/ --root=. src/poster.typ poster.pdf
 ```
 
+Alternatively, the following shorthands are available:
+```sh
+$ make watch
+$ just watch
+```
+
+See `Makefile` or `justfile` for more.
+
 You can then configure all the options you want in `src/poster.typ`,
 and include your own content.
 

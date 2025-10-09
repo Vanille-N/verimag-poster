@@ -6,3 +6,11 @@ build: (typstc "compile" "poster" "pdf")
 watch: (typstc "watch" "poster" "pdf")
 palette: (typstc "watch" "palettes" "pdf")
 
+tar:
+  mkdir -p verimag-poster
+  rm -rf verimag-poster/*
+  cp -r assets build fonts verimag-poster/
+  cp -r justfile Makefile README.md verimag-poster/
+  cp -r src verimag-poster/
+  tar czf verimag-poster.tar.gz verimag-poster
+
