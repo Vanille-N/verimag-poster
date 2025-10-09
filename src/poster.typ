@@ -91,7 +91,7 @@
 
 #boxes.highlight.with[Theorem][
   Pour tout $n in NN$,
-  $ sum_(i = 0)^n i = n(n-1)/2 $
+  $ sum_(i = 0)^n i = n(n+1)/2 $
 ]()
 
 #boxes.normal.with[Illustration][
