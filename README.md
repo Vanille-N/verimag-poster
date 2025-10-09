@@ -1,5 +1,7 @@
 # Verimag poster template
 
+![](build/poster.pdf)
+
 ## Getting started
 
 This template uses [Typst](https://typst.app/), which is a tool similar to LaTeX,
@@ -41,3 +43,4 @@ through one of the following channels:
 3. Contact the original author [Neven Villani](mailto:neven.villani@crans.org)
 
 The GitHub repository also accepts feature requests and contributions.
+
