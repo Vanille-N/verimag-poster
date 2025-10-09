@@ -1,6 +1,6 @@
 # Verimag poster template
 
-![](build/poster.pdf)
+![](build/poster.png)
 
 ## Getting started
 

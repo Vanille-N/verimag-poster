@@ -3,6 +3,7 @@ typstc cmd file fmt:
   typst {{cmd}} --font-path=fonts --root=. src/{{file}}.typ build/{{file}}.{{fmt}}
 
 build: (typstc "compile" "poster" "pdf")
+cover: (typstc "compile" "poster" "png")
 watch: (typstc "watch" "poster" "pdf")
 palette: (typstc "watch" "palettes" "pdf")
 
