@@ -15,3 +15,10 @@ tar:
   cp -r src verimag-poster/
   tar czf verimag-poster.tar.gz verimag-poster
 
+fetch:
+  git fetch github
+  git fetch gricad
+
+push:
+  git push github
+  git push gricad

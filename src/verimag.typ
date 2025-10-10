@@ -92,7 +92,7 @@
       {
         show: align.with(center + horizon)
         set text(
-          size: 140pt,
+          size: params.font.size.title * params.font.size.base,
           fill: palette.title,
         )
         place(top + left, {
@@ -102,7 +102,10 @@
         })
         place(bottom + right, {
           box(inset: 2cm, {
-            set text(size: 70pt, fill: palette.authors)
+            set text(
+              size: params.font.size.authors * params.font.size.base,
+              fill: palette.authors,
+            )
             for (first, last) in params.authors {
               [#first #upper(last)\ ]
             }
@@ -130,7 +133,10 @@
     )
   }
 
-  set text(size: 60pt, font: params.font)
+  set text(
+    size: params.font.size.body * params.font.size.base,
+    font: params.font.family,
+  )
 
   set page(
     paper: "a0",

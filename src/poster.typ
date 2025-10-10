@@ -18,7 +18,15 @@
 }
 
 #let veri-page = build-page(
-  font: "Inria Sans",
+  font: (
+    family: "Inria Sans",
+    size: (
+      base: 100pt,
+      title: 140%,
+      authors: 60%,
+      body: 40%,
+    ),
+  ),
   title: [*My poster*],
   authors: (
     ([Victor], [Hugo]),
@@ -78,15 +86,15 @@
 ]()
 
 #boxes.normal.with[Example][
-  #lorem(30)
+  #lorem(50)
 ]()
 
 #boxes.info.with[Definition][
-  #lorem(10)
+  #lorem(20)
 ]()
 
 #boxes.normal.with[Note][
-  #lorem(30)
+  #lorem(160)
 ]()
 
 #boxes.highlight.with[Theorem][
