@@ -7,13 +7,15 @@ cover: (typstc "compile" "poster" "cover" "png")
 watch: (typstc "watch" "poster" "poster" "pdf")
 palette: (typstc "watch" "template/palette-viewer" "palettes" "pdf")
 
+ARCHIVE := "typst-verimag-poster"
+
 tar:
-  mkdir -p verimag-poster
-  rm -rf verimag-poster/*
-  cp -r assets build fonts verimag-poster/
-  cp -r justfile Makefile README.md verimag-poster/
-  cp -r src verimag-poster/
-  tar czf verimag-poster.tar.gz verimag-poster
+  mkdir -p {{ARCHIVE}}
+  rm -rf {{ARCHIVE}}/*
+  cp -r assets build fonts {{ARCHIVE}}/
+  cp -r justfile Makefile README.md {{ARCHIVE}}/
+  cp -r src {{ARCHIVE}}/
+  tar czf {{ARCHIVE}}.tar.gz {{ARCHIVE}}
 
 fetch:
   git fetch github

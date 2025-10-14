@@ -41,8 +41,8 @@ If the version you have is out of date, you can obtain the latest version
 through one of the following channels:
 1. Download it from one of the public repositories,
   either [github:vanille-n/verimag-poster](https://github.com/Vanille-N/verimag-poster)
-  or [gricad:verimag/mohytos/verimag-poster](https://gricad-gitlab.univ-grenoble-alpes.fr/verimag/mohytos/verimag-poster);
-2. Use the online version on [typst.app](https://typst.app/project/rZQdVx5NTTeBiLuCcmBT8z);
+  or [gricad:neven/verimag-poster](https://gricad-gitlab.univ-grenoble-alpes.fr/neven/verimag-poster);
+2. Duplicate the online version at [typst.app](https://typst.app/project/rZQdVx5NTTeBiLuCcmBT8z);
 3. Contact the original author [Neven Villani](mailto:neven.villani@crans.org).
 
 The GitHub repository also accepts feature requests and contributions.
