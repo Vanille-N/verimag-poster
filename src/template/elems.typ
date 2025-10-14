@@ -1,4 +1,4 @@
-#let make-box-with-boxed-title(title, body, width: 100%, palette: (:)) = {
+#let make-box-with-boxed-title(title, body, width: 100%, palette: (:), title-align: (:)) = {
   import "@preview/showybox:2.0.4": showybox
   showybox(
     width: width,
@@ -8,15 +8,16 @@
       thickness: 5pt,
       title-color: palette.title,
       body-color: palette.body,
-      title-inset: (x: 2cm, y: 6mm)
-    ),
-    title-style: (
-      boxed-style: (
-        radius: (top-right: 2cm),
-      ),
+      title-inset: (x: 3cm, y: 5mm),
     ),
     above: 1cm,
     below: 1cm,
+    title-style: (
+      boxed-style: (
+        anchor: title-align,
+        radius: (top-right: 2cm),
+      ),
+    ),
     shadow: (offset: 3pt),
     title: title,
     body,

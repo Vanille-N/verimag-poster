@@ -7,9 +7,9 @@
 This template uses [Typst](https://typst.app/), which is a tool similar to LaTeX,
 but more user-friendly.
 
-To compile the poster run the following commands:
+To compile the poster run the following command:
 ```sh
-$ typst watch --font-path=fonts/ --root=. src/poster.typ poster.pdf
+$ typst watch --font-path=fonts/ --root=. src/poster.typ build/poster.pdf
 ```
 
 Alternatively, the following shorthands are available:
@@ -29,10 +29,11 @@ and include your own content.
 - `fonts/`: font files used by the document;
 - `src/`: source code, including
   - `poster.typ`: main entry point
-  - `verimag.typ`: Verimag palette and style definitions
-  - `elems.typ`: defines styled boxes and common poster elements
+  - `template/`: only touch those files if you want to go further than the available customization options
+    - `verimag.typ`: Verimag palette and style definitions
+    - `elems.typ`: defines styled boxes and common poster elements
 
-`src/palettes.typ` is auxiliary tool to view available color palettes.
+`src/template/palettes.typ` is auxiliary tool to view available color palettes.
 
 ## Contributing
 

@@ -1,11 +1,11 @@
-typstc cmd file fmt:
+typstc cmd file tgt fmt:
   mkdir -p build
-  typst {{cmd}} --font-path=fonts --root=. src/{{file}}.typ build/{{file}}.{{fmt}}
+  typst {{cmd}} --font-path=fonts --root=. src/{{file}}.typ build/{{tgt}}.{{fmt}}
 
-build: (typstc "compile" "poster" "pdf")
-cover: (typstc "compile" "poster" "png")
-watch: (typstc "watch" "poster" "pdf")
-palette: (typstc "watch" "palettes" "pdf")
+build: (typstc "compile" "poster" "poster" "pdf")
+cover: (typstc "compile" "poster" "cover" "png")
+watch: (typstc "watch" "poster" "poster" "pdf")
+palette: (typstc "watch" "template/palette-viewer" "palettes" "pdf")
 
 tar:
   mkdir -p verimag-poster
