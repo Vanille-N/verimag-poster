@@ -75,7 +75,7 @@
   let palette = params.palette
 
   let logos = table(
-    align: center,
+    align: center + horizon,
     columns: (1fr, 1fr, 1fr),
     stroke: none,
     inset: 1cm,
