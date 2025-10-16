@@ -4,8 +4,8 @@
 // like TikZ is for LaTeX, but more ergonomic.
 #import "@preview/cetz:0.4.2"
 
-// Cades draw QR-codes
-#import "@preview/cades:0.3.0": qr-code
+// Tiaoma draw QR-codes
+#import "@preview/tiaoma:0.3.0"
 
 // We import the auxiliary files that define the poster template.
 //
@@ -27,7 +27,7 @@
 #let url-and-qr(title, url, short: auto) = {
   set text(fill: palette.blue.xdk)
   box[
-    #box(baseline: 50%)[#qr-code(url, width: 8cm, color: palette.blue.xdk, background: palette.blue.mid)]
+    #box(baseline: 50%)[#tiaoma.qrcode(url, options: (fg-color: palette.blue.xdk, bg-color: palette.blue.mid, scale: 5.0))]
     #h(1cm)
     #box(baseline: 50%)[
       #title \
